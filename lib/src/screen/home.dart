@@ -1,6 +1,4 @@
-
 import 'dart:ui';
-
 
 import 'package:flutter/material.dart';
 
@@ -10,7 +8,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SafeArea(
         child: Container(
           color: Colors.white,
@@ -50,24 +47,17 @@ class Home extends StatelessWidget {
                         TextSpan(
                           text: 'Hello',
                           style: TextStyle(
-                            fontSize:32.0,
+                            fontSize: 32.0,
                             fontWeight: FontWeight.w700,
                             color: Colors.pinkAccent,
-                          )
+                          ),
                         )
-                      ]
+                      ],
                     ),
                   ),
                 ),
               )
             ],
-
-      body: Center(
-        child: Text(
-          'ini halaman home',
-          style: TextStyle(
-            fontSize: 20.0,
-
           ),
         ),
       ),
