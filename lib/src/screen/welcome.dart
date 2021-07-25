@@ -20,17 +20,12 @@ class WelcomePage extends StatelessWidget {
                 height: 400,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                 
                   gradient: LinearGradient(
-                 
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
                     colors: [
-                      
                       Colors.black.withOpacity(1),
-
                       Colors.black.withOpacity(0.9),
-
                       Colors.black.withOpacity(0.8),
                       Colors.black.withOpacity(0.7),
                       Colors.black.withOpacity(0.6),
@@ -74,18 +69,20 @@ class WelcomePage extends StatelessWidget {
                 alignment: Alignment.bottomCenter,
                 child: GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                    //     context, MaterialPageRoute(builder: (_) => Home()));
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (_) => Home()));
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Icon(
                         Icons.arrow_forward_ios,
-                        color: Colors.pink,
+                        color:Colors.pink,
+                        
                       ),
                     ),
                   ),
