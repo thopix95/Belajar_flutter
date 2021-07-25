@@ -7,7 +7,7 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [
+        children: <Widget>[
           Image.asset(
             'images/wl.jpg',
             fit: BoxFit.fill,
@@ -17,42 +17,82 @@ class WelcomePage extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              //memberikan gradient
-              decoration: BoxDecoration(
-                //liniergradient
-                gradient: LinearGradient(
-                  //atur posisi linier gradient
-                  begin: Alignment.bottomCenter,
-                  end: Alignment.topCenter,
-                  colors: [
-                    //memberikan value warna
-                    Colors.black.withOpacity(1),
+                height: 400,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                 
+                  gradient: LinearGradient(
+                 
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    colors: [
+                      
+                      Colors.black.withOpacity(1),
 
-                    Colors.black.withOpacity(0.9),
+                      Colors.black.withOpacity(0.9),
 
-                    Colors.black.withOpacity(0.8),
-                    Colors.black.withOpacity(0.7),
-                    Colors.black.withOpacity(0.6),
-                    Colors.black.withOpacity(0.5),
-                    Colors.black.withOpacity(0.4),
-                    Colors.black.withOpacity(0.1),
-                    Colors.black.withOpacity(0.11),
-                    Colors.black.withOpacity(0.025),
-                  ],
+                      Colors.black.withOpacity(0.8),
+                      Colors.black.withOpacity(0.7),
+                      Colors.black.withOpacity(0.6),
+                      Colors.black.withOpacity(0.5),
+                      Colors.black.withOpacity(0.4),
+                      Colors.black.withOpacity(0.1),
+                      Colors.black.withOpacity(0.05),
+                      Colors.black.withOpacity(0.025),
+                    ],
+                  ),
                 ),
-              ),
-            ),
+                child: Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: Container())),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [
+            children: <Widget>[
               Text(
-                'Enjoy The World',
+                "Enjoy the world",
+                textScaleFactor: 1,
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 36.0,
-                  fontWeight: FontWeight.bold,
+                    fontSize: 36,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                "We will help you find the best \n experiences and adventures",
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w400),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: GestureDetector(
+                  onTap: () {
+                    // Navigator.push(
+                    //     context, MaterialPageRoute(builder: (_) => Home()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10)),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Icon(
+                        Icons.arrow_forward_ios,
+                        color: Colors.pink,
+                      ),
+                    ),
+                  ),
                 ),
+              ),
+              SizedBox(
+                height: 40,
               )
             ],
           ),
