@@ -40,7 +40,7 @@ class _ImageCardState extends State<ImageCard> {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: places.length,
-        itemBuilder: (BuildContext context, int index) {
+        itemBuilder: (_, int index) {
           //widget baru
           return ImageCards(
             place: places[index],

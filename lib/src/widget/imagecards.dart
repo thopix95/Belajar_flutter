@@ -14,7 +14,23 @@ class ImageCards extends StatelessWidget {
       child: InkWell(
         onTap: () {},
         child: Container(
-          child: ClipRRect(),
+          child: ClipRRect(
+            child: Stack(
+              children: [
+                Positioned(
+                    child: Align(
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 8.0),
+                    child: Row(
+                      children: [
+                        Text('[$name]'.toString()),
+                      ],
+                    ),
+                  ),
+                ))
+              ],
+            ),
+          ),
         ),
       ),
     );

@@ -61,7 +61,43 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 20.0,
               ),
-              Expanded(child: Container(ImageCards()))
+              Row(
+                children: [
+                  Icon(
+                    Icons.home,
+                  ),
+                  Icon(
+                    Icons.directions,
+                  ),
+                  Icon(
+                    Icons.flight,
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 10.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 8.0,
+                    ),
+                    child: Text(
+                      'Best Experienced',
+                      style: TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Expanded(child: Container(child: ImageCards()))
             ],
           ),
         ),
