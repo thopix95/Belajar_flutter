@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:project_ke_2/src/widget/imagecards.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -56,7 +57,11 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 20.0,
+              ),
+              Expanded(child: Container(ImageCards()))
             ],
           ),
         ),
