@@ -16,6 +16,16 @@ class _ImageCardState extends State<ImageCard> {
       image: '1.jpg',
       days: 7,
     ),
+    Place(
+      place: 'Yogya',
+      image: '2.jpg',
+      days: 9,
+    ),
+    Place(
+      place: 'Jakarta',
+      image: '3.jpg',
+      days: 7,
+    ),
   ];
   @override
   Widget build(BuildContext context) {
