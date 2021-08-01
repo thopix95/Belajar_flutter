@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project_ke_2/src/model/place.dart';
-
 import 'imagecards.dart';
 
 class ImageCard extends StatefulWidget {
@@ -46,6 +45,7 @@ class _ImageCardState extends State<ImageCard> {
             place: places[index],
             name: places[index].place,
             days: places[index].days,
+            
           );
         },
       ),
